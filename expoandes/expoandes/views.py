@@ -10,10 +10,9 @@ def hora(request):
     formato = '<html><body><h1> La fecha y hora son %s </h1></body></html>' % fecha
     return HttpResponse(formato)
 def edad(request, anio, edad):
-    
+
     periodo = anio - 2021
     edad_futura = edad + periodo
 
-    formato = "<html><body><h3><center>En el año %s tendras %s </center></h3></body></html>" %(anio, edad_futura)
+    formato = "<html><body><h3><center>En el año %s tendras %s </center></h3></body></html>" %(anio, edad_futura, "Micolas es pro")
     return HttpResponse(formato)
-
